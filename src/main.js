@@ -5,9 +5,6 @@ import store from "./store";
 import Vuetify from "vuetify";
 import VueParticles from "vue-particles";
 import VueScrollactive from "vue-scrollactive";
-import { VBHoverPlugin } from "bootstrap-vue";
-
-Vue.use(VBHoverPlugin);
 
 Vue.use(VueScrollactive);
 
