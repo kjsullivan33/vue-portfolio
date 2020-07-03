@@ -1,0 +1,95 @@
+// imports
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+// colors
+$primary: #30a0ee;
+$error: #ef5777;
+$success: #1abc9c;
+$light: #f5f8fa;
+$medium: #657786;
+$dark: #100c21;
+$darkest: #0e0a1e;
+$white: #fff;
+$green: #7bf12f;
+$lightGreen: #a4fc6b;
+// resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  transition: 0.15s;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+// fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: $primary;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($primary, 5%);
+  }
+}
+
+// globals
+
+#app {
+  margin: 0;
+  width: 100%;
+}
+
+.section_header {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+  color: #2d2c2e;
+}
+
+.header_bar {
+  background-color: #2d2c2e;
+  width: 6rem;
+  height: 4px;
+  margin-top: 1rem;
+}

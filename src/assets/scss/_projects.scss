@@ -1,0 +1,190 @@
+// imports
+@import "./global";
+
+#projects-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+
+  .project-grid {
+    margin-top: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    .project {
+      position: relative;
+      width: 30rem;
+      height: 16rem;
+      border: 1px solid $light;
+
+      .project-text {
+        width: 30rem;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+
+        .project-name {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+
+        .project-tech {
+          color: #524b63;
+          font-size: 1.4rem;
+        }
+      }
+
+      &:hover {
+        .project-text {
+          opacity: 1;
+          top: 30%;
+        }
+
+        .btn-learn {
+          opacity: 1;
+          bottom: 20%;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+    .project-1::before {
+      background: url("../assets/concora_screenshot_kohler.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-2:before {
+      background: url("../assets/smitegame_screenshot.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-3:before {
+      background: url("../assets/concora_design_manager.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-4:before {
+      background: url("../assets/paladins_home.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-5:before {
+      background: url("../assets/realmroyale_home.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-6:before {
+      background: url("../assets/mudstack_home.png") no-repeat;
+      background-size: 100% auto;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+    }
+
+    .btn-learn {
+      padding: 0.25rem 1rem;
+      position: absolute;
+      background: transparent;
+      cursor: pointer;
+      border: 3px solid $green;
+      font-size: 1.6rem;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $light;
+        background-color: $green;
+      }
+    }
+  }
+}

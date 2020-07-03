@@ -1,0 +1,48 @@
+// imports
+@import "./global";
+
+.my-nav {
+  width: 100%;
+  background-color: #524b63;
+  height: 3rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: $light;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0 8rem;
+}
+
+.scrollactive-item {
+  cursor: pointer;
+  margin-right: 4rem;
+  text-decoration: none;
+  color: $light;
+
+  &:hover {
+    color: $darkest;
+  }
+  &.-active {
+    color: $green;
+  }
+  &:focus {
+    outline: 1px solid rgba(82, 75, 99, 0.5);
+  }
+}
+
+.before-enter {
+  opacity: 0;
+}
+
+.enter {
+  transition: opacity 2s ease;
+}
+
+.leave {
+  opacity: 0;
+  transition: 2s ease;
+}
