@@ -3,15 +3,13 @@
 
 header {
   position: relative;
-  background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/grunge-background-14635619239LT.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(40, 35, 53, 0.5);
+  background-color: rgb(40, 35, 53);
   height: 100vh;
-  border: 1px solid $dark;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .home {
@@ -34,6 +32,20 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 30rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 940px) {
+  .header_text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header_text {
+    font-size: 1.2rem;
+  }
 }
 
 .name {
@@ -74,6 +86,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  .button {
+    font-size: 1.2rem;
+    height: 2.4rem;
+  }
 }
 .icon {
   margin-left: 0.5rem;

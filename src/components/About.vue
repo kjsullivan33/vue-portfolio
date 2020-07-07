@@ -54,42 +54,40 @@
           <div class="skill-bar">
             <div class="label-fill">
               <div class="label">CSS</div>
-              <div class="fill" style="width: 19rem"></div>
+              <div class="fill" style="width: 85%"></div>
             </div>
             <div class="percentage">85%</div>
           </div>
           <div class="skill-bar">
             <div class="label-fill">
               <div class="label">HTML</div>
-              <div class="fill" style="width: 19rem"></div>
+              <div class="fill" style="width: 85%"></div>
             </div>
             <div class="percentage">85%</div>
           </div>
           <div class="skill-bar">
-            <div class="label-fill">
               <div class="label">Javascript</div>
-              <div class="fill" style="width: 17rem"></div>
-            </div>
+              <div class="fill" style="width: 80%"></div>
             <div class="percentage">80%</div>
           </div>
           <div class="skill-bar">
             <div class="label-fill">
               <div class="label">React</div>
-              <div class="fill" style="width: 17rem"></div>
+              <div class="fill" style="width: 80%"></div>
             </div>
             <div class="percentage">80%</div>
           </div>
           <div class="skill-bar">
             <div class="label-fill">
               <div class="label">Node.js</div>
-              <div class="fill" style="width: 15rem"></div>
+              <div class="fill" style="width: 75%"></div>
             </div>
             <div class="percentage">75%</div>
           </div>
           <div class="skill-bar">
             <div class="label-fill">
               <div class="label">Vue.js</div>
-              <div class="fill" style="width: 11rem"></div>
+              <div class="fill" style="width: 50%"></div>
             </div>
             <div class="percentage">50%</div>
           </div>
