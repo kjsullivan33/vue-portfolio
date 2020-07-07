@@ -1,28 +1,30 @@
 // imports
 @import "./global";
 
+#projects-header {
+  margin-top: 2rem;
+}
 #projects-section {
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
 
   .project-grid {
-    margin-top: 5rem;
     width: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    margin-top: 2rem;
 
     .project {
       position: relative;
-      width: 30rem;
-      height: 16rem;
+      width: 28rem;
+      height: 15rem;
       border: 1px solid $light;
 
       .project-text {

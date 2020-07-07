@@ -1,7 +1,6 @@
 <template>
   <div>
-    <a name="about" id="about" />
-    <section id="about-section">
+    <section id="about">
       <h1 class="section_header">About</h1>
       <div class="header_bar"></div>
       <div class="top_skills">
@@ -66,8 +65,8 @@
             <div class="percentage">85%</div>
           </div>
           <div class="skill-bar">
-              <div class="label">Javascript</div>
-              <div class="fill" style="width: 80%"></div>
+            <div class="label">Javascript</div>
+            <div class="fill" style="width: 80%"></div>
             <div class="percentage">80%</div>
           </div>
           <div class="skill-bar">
