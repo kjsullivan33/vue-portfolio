@@ -5,45 +5,24 @@
       <h1 class="section_header">Projects</h1>
       <div class="header_bar"></div>
       <div class="project-grid">
-        <div class="project project-6">
-          <div class="project-text">
-            <div class="project-name">Mudstack Digital Art Management</div>
-            <div class="project-tech">React/Node</div>
+        <div
+          class="project"
+          v-for="(project, index) in projectData"
+          v-bind:key="index"
+        >
+          <div class="grid-box-picture">
+            <div
+              class="grid-box-picturebox"
+              id="blend-in"
+              v-bind:style="{
+                'background-image': 'url(' + project.backgroundUrl + ')'
+              }"
+              v-lazy="project.backgroundUrl"
+            ></div>
           </div>
-          <button class="btn-learn">Learn More</button>
-        </div>
-        <div class="project project-1">
           <div class="project-text">
-            <div class="project-name">Concora Design Studio</div>
-            <div class="project-tech">React/Node.js</div>
-          </div>
-          <button class="btn-learn">Learn More</button>
-        </div>
-        <div class="project project-3">
-          <div class="project-text">
-            <div class="project-name">Concora Design Manager</div>
-            <div class="project-tech">React/Node</div>
-          </div>
-          <button class="btn-learn">Learn More</button>
-        </div>
-        <div class="project project-2">
-          <div class="project-text">
-            <div class="project-name">Hi-Rez Studios Smite</div>
-            <div class="project-tech">Gatsby/React</div>
-          </div>
-          <button class="btn-learn">Learn More</button>
-        </div>
-        <div class="project project-4">
-          <div class="project-text">
-            <div class="project-name">Hi-Rez Studios Paladins</div>
-            <div class="project-tech">Gatsby/React</div>
-          </div>
-          <button class="btn-learn">Learn More</button>
-        </div>
-        <div class="project project-5">
-          <div class="project-text">
-            <div class="project-name">Hi-Rez Studios Realm Royale</div>
-            <div class="project-tech">Gatsby/React</div>
+            <div class="project-name">{{ project.name }}</div>
+            <div class="project-tech">{{ project.tech }}</div>
           </div>
           <button class="btn-learn">Learn More</button>
         </div>
@@ -53,9 +32,13 @@
 </template>
 
 <script>
+import { projectData } from "../helpers/projectData";
 export default {
   name: "Projects",
-  components: {}
+  components: {},
+  data: () => ({
+    projectData: projectData
+  })
 };
 </script>
 

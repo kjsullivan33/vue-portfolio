@@ -66,111 +66,32 @@
           bottom: 20%;
         }
 
-        &::before {
+        #blend-in {
           opacity: 0;
         }
       }
     }
-    .project-1::before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_screenshot_kohler.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
+
+    .grid-box-picturebox {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .grid-box-picture {
+      width: 100%;
+      height: 220px;
+      background-color: transparent;
+      transition: opacity 0.5s;
     }
 
-    .project-2:before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/smitegame_screenshot.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-    }
-
-    .project-3:before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_design_manager.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-    }
-
-    .project-4:before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/paladins_home.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-    }
-
-    .project-5:before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/realmroyale_home.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-    }
-
-    .project-6:before {
-      background: url("https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/mudstack_home.png")
-        no-repeat;
-      background-size: 100% auto;
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
+    #blend-in {
+      animation: fadein 0.5s;
+      -moz-animation: fadein 0.5s; /* Firefox */
+      -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+      -o-animation: fadein 0.5s; /* Opera */
     }
 
     .btn-learn {

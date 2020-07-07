@@ -5,6 +5,9 @@ import store from "./store";
 import Vuetify from "vuetify";
 import VueParticles from "vue-particles";
 import VueScrollactive from "vue-scrollactive";
+import VueLazyload from "vue-lazyload";
+
+Vue.use(VueLazyload);
 
 Vue.use(VueScrollactive);
 
