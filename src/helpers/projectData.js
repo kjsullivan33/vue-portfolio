@@ -4,41 +4,41 @@ export const projectData = [
     name: "Mudstack Digital Art Management",
     tech: "React/Node",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/mudstack_home.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/mudstack_home.jp2"
   },
   {
     id: 1235,
     name: "Concora Design Studio",
     tech: "React/Node",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_screenshot_kohler.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_screenshot_kohler.jp2"
   },
   {
     id: 1236,
     name: "Concora Design Manager",
     tech: "React/Node",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_design_manager.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/concora_design_manager.jp2"
   },
   {
     id: 1237,
     name: "Hi-Rez Studios Smite",
     tech: "Gatsby/React",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/smitegame_screenshot.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/smitegame_screenshot.jp2"
   },
   {
     id: 1238,
     name: "Hi-Rez Studios Paladins",
     tech: "Gatsby/React",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/paladins_home.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/paladins_home.jp2"
   },
   {
     id: 1239,
     name: "Hi-Rez Studios Realm Royale",
     tech: "Gatsby/React",
     backgroundUrl:
-      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/realmroyale_home.png"
+      "https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/realmroyale_home.jp2"
   }
 ];
