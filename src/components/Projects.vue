@@ -16,7 +16,11 @@
                 v-bind:srcset="project.backgroundUrl.jp2"
                 type="image/jp2"
               />
-              <img v-bind:src="project.backgroundUrl.png" alt="project" />
+              <img
+                v-bind:src="project.backgroundUrl.png"
+                alt="project"
+                rel="preload"
+              />
             </picture>
           </div>
           <div class="project-text">
