@@ -11,7 +11,7 @@
           v-bind:key="index"
         >
           <div class="grid-box-picture">
-            <picture class="grid-box-picturebox" id="blend-in">
+            <picture class="grid-box-picturebox blend-in">
               <source
                 v-bind:srcset="project.backgroundUrl.jp2"
                 type="image/jp2"

@@ -9,7 +9,9 @@
             <v-icon class="icon" :size="50">{{ responsive }}</v-icon>
           </div>
           <div>Responsive</div>
-          <div class="skill_details">Layouts for all devices with a mobile first methodology</div>
+          <div class="skill_details">
+            Layouts for all devices with a mobile first methodology
+          </div>
         </div>
         <div class="skill">
           <div class="icon-box">
@@ -26,14 +28,18 @@
             <v-icon class="icon" :size="50">{{ intuitive }}</v-icon>
           </div>
           <div>Intuitive</div>
-          <div class="skill_details">Easy to use and follow UX/UI is always the goal.</div>
+          <div class="skill_details">
+            Easy to use and follow UX/UI is always the goal.
+          </div>
         </div>
         <div class="skill">
           <div class="icon-box">
             <v-icon class="icon" :size="50">{{ fast }}</v-icon>
           </div>
           <div>Fast</div>
-          <div class="skill_details">Fast load times and lag free interaction are a priority.</div>
+          <div class="skill_details">
+            Fast load times and lag free interaction are a priority.
+          </div>
         </div>
       </div>
       <div class="details">
@@ -41,6 +47,7 @@
           <img
             class="profile-img"
             src="https://s3.us-east-2.amazonaws.com/ks-portfoli.com/images/profile.jpg"
+            alt="profile photo"
           />
           <div class="personal-info">
             I'm a full stack developer with a strong emphasis on frontend
