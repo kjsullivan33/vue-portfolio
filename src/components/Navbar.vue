@@ -24,6 +24,14 @@
     >
       Projects
     </a>
+    <a
+      href="#contact"
+      class="scrollactive-item"
+      id="contact-nav"
+      @click="scrollToContact"
+    >
+      Contact
+    </a>
   </scrollactive>
 </template>
 
@@ -44,6 +52,11 @@ export default {
     },
     scrollToProjects() {
       document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+      });
+    },
+    scrollToContact() {
+      document.getElementById("content").scrollIntoView({
         behavior: "smooth"
       });
     }

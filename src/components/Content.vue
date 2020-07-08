@@ -3,6 +3,7 @@
     <Navbar />
     <About />
     <Projects />
+    <Contact />
   </section>
 </template>
 
@@ -10,10 +11,11 @@
 import Navbar from "./Navbar";
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 export default {
   name: "Content",
-  components: { Navbar, About, Projects }
+  components: { Navbar, About, Projects, Contact }
 };
 </script>
 

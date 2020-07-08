@@ -1,0 +1,28 @@
+@import "./global";
+
+.scroll-up {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(40, 196, 63);
+  color: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    background-color: rgb(32, 155, 50);
+  }
+
+  .arrow-icon {
+    font-size: 2rem;
+  }
+}

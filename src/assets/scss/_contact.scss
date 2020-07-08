@@ -1,0 +1,66 @@
+@import "./global";
+#contact {
+  background-color: #27232e;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-header {
+  color: $mediumLight;
+  margin-top: 3rem;
+}
+
+.contact-header_bar {
+  background-color: $mediumLight;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  color: $light;
+  margin-top: 3rem;
+  padding-bottom: 3.8rem;
+
+  .form-section {
+    background-color: rgb(24, 21, 31);
+    font-size: 1.2rem;
+    line-height: 140%;
+    padding: 0.4rem;
+    width: 100%;
+    caret-color: $light;
+    border: none;
+    border-radius: 2px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &::placeholder {
+      color: $mediumLight;
+      padding: 0.3rem;
+    }
+
+    &:focus {
+      outline: 1px solid rgba(123, 241, 47, 0.5);
+    }
+  }
+
+  textarea {
+    height: 18rem;
+  }
+
+  #btn-submit {
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

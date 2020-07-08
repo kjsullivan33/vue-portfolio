@@ -6,6 +6,9 @@ import Vuetify from "vuetify";
 import VueParticles from "vue-particles";
 import VueScrollactive from "vue-scrollactive";
 import VueLazyload from "vue-lazyload";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(VueLazyload);
 

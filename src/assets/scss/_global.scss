@@ -7,6 +7,7 @@ $primary: #30a0ee;
 $error: #ef5777;
 $success: #1abc9c;
 $light: #f5f8fa;
+$mediumLight: #859eb3;
 $medium: #657786;
 $dark: #100c21;
 $darkest: #0e0a1e;
@@ -80,6 +81,7 @@ a {
 }
 
 .section_header {
+  margin-top: 4rem;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -92,4 +94,41 @@ a {
   width: 6rem;
   height: 4px;
   margin-top: 1rem;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  height: 4rem;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    outline: 1px solid rgba(123, 241, 47, 0.5);
+  }
+  &:hover {
+    background-color: rgba(123, 241, 47, 0.5);
+    border: none;
+  }
 }

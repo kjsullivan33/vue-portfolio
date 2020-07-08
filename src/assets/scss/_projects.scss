@@ -1,74 +1,63 @@
 // imports
 @import "./global";
 
-#projects-header {
-  margin-top: 2rem;
-}
-#projects-section {
-  width: 100%;
-  position: relative;
+.project-grid {
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 
-  .project-grid {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    margin-top: 2rem;
+  .project {
+    position: relative;
+    width: 28rem;
+    height: 15rem;
+    border: 1px solid $light;
 
-    .project {
-      position: relative;
-      width: 28rem;
-      height: 15rem;
-      border: 1px solid $light;
+    .project-text {
+      width: 30rem;
+      height: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
 
-      .project-text {
-        width: 30rem;
-        height: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-
-        .project-name {
-          font-size: 1.6rem;
-          font-weight: bold;
-        }
-
-        .project-tech {
-          color: #524b63;
-          font-size: 1.4rem;
-        }
+      .project-name {
+        font-size: 1.6rem;
+        font-weight: bold;
       }
 
-      &:hover {
-        .project-text {
-          opacity: 1;
-          top: 30%;
-        }
+      .project-tech {
+        color: #524b63;
+        font-size: 1.4rem;
+      }
+    }
 
-        .btn-learn {
-          opacity: 1;
-          bottom: 20%;
-        }
+    &:hover {
+      .project-text {
+        opacity: 1;
+        top: 30%;
+      }
 
-        .grid-box-picturebox {
-          opacity: 0;
-        }
+      .btn-learn {
+        opacity: 1;
+        bottom: 20%;
+      }
+
+      .grid-box-picturebox {
+        opacity: 0;
       }
     }
 
