@@ -92,10 +92,31 @@
           </div>
           <div class="skill-bar">
             <div class="label-fill">
+              <div class="label">PHP</div>
+              <div class="fill" style="width: 60%"></div>
+            </div>
+            <div class="percentage">60%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="label-fill">
               <div class="label">Vue.js</div>
               <div class="fill" style="width: 50%"></div>
             </div>
             <div class="percentage">50%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="label-fill">
+              <div class="label">Python</div>
+              <div class="fill" style="width: 50%"></div>
+            </div>
+            <div class="percentage">50%</div>
+          </div>
+          <div class="skill-bar">
+            <div class="label-fill">
+              <div class="label">Ruby/Rails</div>
+              <div class="fill" style="width: 30%"></div>
+            </div>
+            <div class="percentage">30%</div>
           </div>
         </div>
       </div>
