@@ -66,7 +66,7 @@
           bottom: 20%;
         }
 
-        #blend-in {
+        .grid-box-picturebox {
           opacity: 0;
         }
       }
@@ -79,12 +79,17 @@
       overflow: hidden;
       background-size: cover;
       background-repeat: no-repeat;
+      opacity: 1;
+      transition: opacity 0.5s;
     }
     .grid-box-picture {
       width: 100%;
-      height: 220px;
+      height: 100%;
       background-color: transparent;
-      transition: opacity 0.5s;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     #blend-in {

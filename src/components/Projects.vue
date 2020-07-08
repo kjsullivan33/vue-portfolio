@@ -11,14 +11,13 @@
           v-bind:key="index"
         >
           <div class="grid-box-picture">
-            <div
-              class="grid-box-picturebox"
-              id="blend-in"
-              v-bind:style="{
-                'background-image': 'url(' + project.backgroundUrl + ')'
-              }"
-              v-lazy="project.backgroundUrl"
-            ></div>
+            <picture class="grid-box-picturebox" id="blend-in">
+              <source
+                v-bind:srcset="project.backgroundUrl.jp2"
+                type="image/jp2"
+              />
+              <img v-bind:src="project.backgroundUrl.png" alt="project" />
+            </picture>
           </div>
           <div class="project-text">
             <div class="project-name">{{ project.name }}</div>
