@@ -43,7 +43,7 @@
         @click.prevent="toggleMenu"
       />
       <div v-show="showMenu" class="menu-options">
-        <a href="#home" class="menu-item" id="home-nav" @click="scrollToTop">
+        <a href="#home" class="menu-item" @click="scrollToTop">
           Home
         </a>
         <a href="#about" class="menu-item" v-on:click="closeMenu">
