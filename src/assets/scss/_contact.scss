@@ -63,6 +63,12 @@
   .contact-header {
     width: 80%;
   }
+}
+
+@media screen and (max-width: 350px) {
+  .contact-header {
+    width: 80%;
+  }
   .contact-form {
     width: 25rem;
   }
