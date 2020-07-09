@@ -8,7 +8,6 @@
         target="__blank"
       >
         <font-awesome-icon :icon="githubIcon" class="footer-icon" />
-        Github
       </a>
       <a
         class="footer-icon_box"
@@ -16,7 +15,6 @@
         target="__blank"
       >
         <font-awesome-icon :icon="linkedinIcon" class="footer-icon" />
-        Linkedin
       </a>
       <a
         class="footer-icon_box"
@@ -24,7 +22,6 @@
         target="__blank"
       >
         <font-awesome-icon :icon="facebookIcon" class="footer-icon" />
-        Facebook
       </a>
       <a
         class="footer-icon_box"
@@ -32,7 +29,6 @@
         target="__blank"
       >
         <font-awesome-icon :icon="twitterIcon" class="footer-icon" />
-        Twitter
       </a>
     </div>
   </footer>

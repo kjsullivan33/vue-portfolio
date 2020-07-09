@@ -15,7 +15,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  width: 50%;
   color: $light;
   padding: 0 5rem 5rem 5rem;
 
@@ -64,6 +64,6 @@
     width: 80%;
   }
   .contact-form {
-    width: 30rem;
+    width: 25rem;
   }
 }
