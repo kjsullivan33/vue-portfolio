@@ -5,20 +5,22 @@
     </div>
     <form class="contact-form" @submit.prevent="sendEmail">
       <div class="form-section">
-        <label for="user_name">Name</label>
+        <label for="name">Name</label>
         <input
           class="field"
           type="text"
           name="user_name"
+          id="name"
           placeholder="Provide your full name"
         />
       </div>
       <div class="form-section">
-        <label for="user_email">Email</label>
+        <label for="email">Email</label>
         <input
           class="field"
           type="email"
           name="user_email"
+          id="email"
           placeholder="Add your email address"
         />
       </div>
@@ -28,6 +30,7 @@
           class="field"
           name="message"
           placeholder="Write a Message"
+          id="message"
         ></textarea>
       </div>
       <div class="button-box">
