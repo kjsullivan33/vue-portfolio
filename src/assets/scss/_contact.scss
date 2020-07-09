@@ -8,19 +8,16 @@
 .contact-header {
   color: $mediumLight;
   margin-top: 3rem;
-}
-
-.contact-header_bar {
-  background-color: $mediumLight;
+  width: 30rem;
+  text-align: center;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50rem;
   color: $light;
-  margin-top: 3rem;
-  padding-bottom: 3.8rem;
+  padding: 0 5rem 5rem 5rem;
 
   .form-section {
     background-color: rgb(24, 21, 31);
@@ -34,10 +31,7 @@
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
+    margin-top: 1.5rem;
 
     &::placeholder {
       color: $mediumLight;
@@ -62,5 +56,14 @@
   .button-box {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact-header {
+    width: 80%;
+  }
+  .contact-form {
+    width: 30rem;
   }
 }
