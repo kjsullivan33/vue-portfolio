@@ -46,28 +46,13 @@
         <a href="#home" class="menu-item" id="home-nav" @click="scrollToTop">
           Home
         </a>
-        <a
-          href="#about"
-          class="menu-item"
-          id="about-nav"
-          v-on:click="closeMenu"
-        >
+        <a href="#about" class="menu-item" v-on:click="closeMenu">
           About
         </a>
-        <a
-          href="#projects"
-          class="menu-item"
-          id="projects-nav"
-          v-on:click="closeMenu"
-        >
+        <a href="#projects" class="menu-item" v-on:click="closeMenu">
           Projects
         </a>
-        <a
-          href="#contact"
-          class="menu-item"
-          id="contact-nav"
-          v-on:click="closeMenu"
-        >
+        <a href="#contact" class="menu-item" v-on:click="closeMenu">
           Contact
         </a>
       </div>
