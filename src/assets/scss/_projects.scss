@@ -53,7 +53,7 @@
 
       .btn-learn {
         opacity: 1;
-        bottom: 20%;
+        bottom: 10%;
       }
 
       .grid-box-picturebox {
@@ -89,6 +89,7 @@
     }
 
     .btn-learn {
+      color: $dark;
       padding: 0.25rem 1rem;
       position: absolute;
       background: transparent;
