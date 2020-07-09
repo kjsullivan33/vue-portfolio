@@ -4,26 +4,32 @@
       Would you like to contact me? Send me an email.
     </div>
     <form class="contact-form" @submit.prevent="sendEmail">
-      <input
-        class="form-section"
-        type="text"
-        name="user_name"
-        placeholder="Name"
-      />
-
-      <input
-        class="form-section"
-        type="email"
-        name="user_email"
-        placeholder="Email"
-      />
-
-      <textarea
-        class="form-section"
-        name="message"
-        placeholder="Message"
-      ></textarea>
-
+      <div class="form-section">
+        <label for="user_name">Name</label>
+        <input
+          class="field"
+          type="text"
+          name="user_name"
+          placeholder="Provide your full name"
+        />
+      </div>
+      <div class="form-section">
+        <label for="user_email">Email</label>
+        <input
+          class="field"
+          type="email"
+          name="user_email"
+          placeholder="Add your email address"
+        />
+      </div>
+      <div class="form-section">
+        <label for="message">Message</label>
+        <textarea
+          class="field"
+          name="message"
+          placeholder="Write a Message"
+        ></textarea>
+      </div>
       <div class="button-box">
         <button id="btn-submit" type="submit">Submit</button>
       </div>

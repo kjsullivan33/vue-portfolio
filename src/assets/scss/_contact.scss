@@ -15,16 +15,34 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  justify-content: center;
   color: $light;
   padding: 0 5rem 5rem 5rem;
+  width: 70rem;
 
   .form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  label {
+    width: 15%;
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    text-align: right;
+  }
+
+  .field {
+    color: $light;
     background-color: rgb(24, 21, 31);
     font-size: 1.2rem;
     line-height: 140%;
     padding: 0.5rem 1rem;
-    width: 100%;
+    width: 80%;
     caret-color: $light;
     border: none;
     border-radius: 2px;
@@ -32,7 +50,6 @@
     -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     margin-top: 1.5rem;
-    color: $light;
 
     &::placeholder {
       color: $mediumLight;
@@ -63,13 +80,18 @@
   .contact-header {
     width: 80%;
   }
+
+  label {
+    display: none;
+  }
+
   .contact-form {
-    width: 30rem;
+    width: 35rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .contact-form {
-    width: 25rem;
+    width: 30rem;
   }
 }
