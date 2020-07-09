@@ -83,6 +83,7 @@
 
   label {
     display: none;
+    width: 0%;
   }
 
   .contact-form {
@@ -93,5 +94,9 @@
 @media screen and (max-width: 350px) {
   .contact-form {
     width: 30rem;
+  }
+
+  .button-box {
+    margin-right: 1.9rem;
   }
 }
