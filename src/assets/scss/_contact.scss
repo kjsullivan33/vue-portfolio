@@ -3,100 +3,115 @@
   background-color: #27232e;
   justify-content: flex-start;
   align-items: center;
+  min-height: 90vh;
 }
 
 .contact-header {
   color: $mediumLight;
-  margin-top: 3rem;
-  width: 30rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
   text-align: center;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Style inputs, select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
   color: $light;
-  padding: 0 5rem 5rem 5rem;
-  width: 70rem;
+  background-color: rgb(24, 21, 31);
+  font-size: 1.2rem;
+  line-height: 140%;
+  padding: 0.5rem 1rem;
+  caret-color: $light;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 
-  .form-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  &::placeholder {
+    color: $mediumLight;
   }
 
-  label {
-    width: 15%;
-    font-size: 1.2rem;
-    line-height: 140%;
-    margin-top: 1.5rem;
-    margin-right: 1rem;
-    text-align: right;
-  }
-
-  .field {
-    color: $light;
-    background-color: rgb(24, 21, 31);
-    font-size: 1.2rem;
-    line-height: 140%;
-    padding: 0.5rem 1rem;
-    width: 80%;
-    caret-color: $light;
-    border: none;
-    border-radius: 2px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 1.5rem;
-
-    &::placeholder {
-      color: $mediumLight;
-    }
-
-    &:focus {
-      outline: 1px solid rgba(123, 241, 47, 0.5);
-    }
-  }
-
-  textarea {
-    height: 18rem;
-  }
-
-  #btn-submit {
-    width: fit-content;
-    padding: 1rem;
-    font-size: 1.4rem;
-  }
-
-  .button-box {
-    display: flex;
-    justify-content: flex-end;
+  &:focus {
+    outline: 1px solid rgba(123, 241, 47, 0.5);
   }
 }
 
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  font-size: 1.4rem;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  color: $light;
+  float: right;
+  border: 1px solid $light;
+  &:hover {
+    background-color: #4caf50;
+    border-color: transparent;
+  }
+}
+
+form {
+  padding-bottom: 3rem;
+}
+
+/* Style the container */
+.container {
+  color: $light;
+  width: calc(100vw - 400px);
+  min-width: 20rem;
+}
+
+/* Floating column for labels: 10% width */
+.col-10 {
+  float: left;
+  width: 10%;
+  text-align: right;
+}
+
+/* Floating column for inputs: 90% width */
+.col-90 {
+  float: left;
+  width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 750px) {
-  .contact-header {
-    width: 80%;
+  .col-10,
+  .col-90,
+  input[type="submit"] {
+    width: 100%;
   }
 
-  label {
-    display: none;
-    width: 0%;
+  .col-10 {
+    text-align: left;
   }
 
-  .contact-form {
-    width: 35rem;
-  }
-
-  .button-box {
-    margin-right: 1.9rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .contact-form {
-    width: 30rem;
+  .row:not(:last-child) {
+    margin-bottom: 0.5rem;
   }
 }

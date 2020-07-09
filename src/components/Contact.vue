@@ -3,40 +3,52 @@
     <div class="contact-header">
       Would you like to contact me? Send me an email.
     </div>
-    <form class="contact-form" @submit.prevent="sendEmail">
-      <div class="form-section">
-        <label for="name">Name</label>
-        <input
-          class="field"
-          type="text"
-          name="user_name"
-          id="name"
-          placeholder="Provide your full name"
-        />
-      </div>
-      <div class="form-section">
-        <label for="email">Email</label>
-        <input
-          class="field"
-          type="email"
-          name="user_email"
-          id="email"
-          placeholder="Add your email address"
-        />
-      </div>
-      <div class="form-section">
-        <label for="message">Message</label>
-        <textarea
-          class="field"
-          name="message"
-          placeholder="Write a Message"
-          id="message"
-        ></textarea>
-      </div>
-      <div class="button-box">
-        <button id="btn-submit" type="submit">Submit</button>
-      </div>
-    </form>
+    <div class="container">
+      <form @submit.prevent="sendEmail">
+        <div class="row">
+          <div class="col-10">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="text"
+              id="email"
+              name="user_email"
+              placeholder="Your email address.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-90">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              style="height:200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
   </section>
 </template>
 

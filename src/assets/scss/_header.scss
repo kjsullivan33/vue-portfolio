@@ -52,30 +52,6 @@ header {
   color: $green;
 }
 
-button {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0rem 1rem;
-  border-radius: 2px;
-  background-color: transparent;
-  border: 1px solid $white;
-  color: $white;
-  height: 4rem;
-
-  &:active {
-    outline: none;
-    border: none;
-  }
-
-  &:focus {
-    outline: 1px solid rgba(123, 241, 47, 0.5);
-  }
-  &:hover {
-    background-color: rgba(123, 241, 47, 0.5);
-    border: none;
-  }
-}
-
 .arrow {
   fill: white;
   width: 40px;
