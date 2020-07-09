@@ -15,7 +15,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 50rem;
   color: $light;
   padding: 0 5rem 5rem 5rem;
 
@@ -63,12 +63,12 @@
   .contact-header {
     width: 80%;
   }
+  .contact-form {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
-  .contact-header {
-    width: 80%;
-  }
   .contact-form {
     width: 25rem;
   }
