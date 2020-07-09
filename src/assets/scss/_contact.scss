@@ -23,7 +23,7 @@
     background-color: rgb(24, 21, 31);
     font-size: 1.2rem;
     line-height: 140%;
-    padding: 0.4rem;
+    padding: 0.5rem 1rem;
     width: 100%;
     caret-color: $light;
     border: none;
@@ -36,7 +36,6 @@
 
     &::placeholder {
       color: $mediumLight;
-      padding: 0.3rem;
     }
 
     &:focus {
