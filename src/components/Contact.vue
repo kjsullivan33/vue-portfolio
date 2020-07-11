@@ -49,14 +49,17 @@
         </div>
       </form>
     </div>
+    <ScrollTopButton class="home-scroll-up" />
   </section>
 </template>
 
 <script>
 import emailjs from "emailjs-com";
+import ScrollTopButton from "./ScrollTopButton";
 
 export default {
   name: "Contact",
+  components: { ScrollTopButton },
   methods: {
     sendEmail: e => {
       emailjs

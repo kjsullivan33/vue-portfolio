@@ -4,8 +4,6 @@
 
 // colors
 $primary: #30a0ee;
-$error: #ef5777;
-$success: #1abc9c;
 $light: #f5f8fa;
 $mediumLight: #bfd2e3;
 $medium: #657786;
@@ -14,6 +12,7 @@ $darkest: #0e0a1e;
 $white: #fff;
 $green: #7bf12f;
 $lightGreen: #a4fc6b;
+$lightPurple: #524b63;
 // resets
 * {
   margin: 0;
@@ -103,32 +102,4 @@ section {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-}
-
-button {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0rem 1rem;
-  border-radius: 2px;
-  background-color: transparent;
-  border: 1px solid $white;
-  color: $white;
-  height: 4rem;
-  border-radius: 2px;
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-
-  &:active {
-    outline: none;
-    border: none;
-  }
-
-  &:focus {
-    outline: 1px solid rgba(123, 241, 47, 0.5);
-  }
-  &:hover {
-    background-color: rgba(123, 241, 47, 0.5);
-    border: none;
-  }
 }

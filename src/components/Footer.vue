@@ -1,6 +1,5 @@
 <template>
   <footer id="footer">
-    <ScrollTopButton />
     <div id="icons">
       <a
         class="footer-icon_box"
@@ -42,11 +41,9 @@ import {
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
-import ScrollTopButton from "./ScrollTopButton";
-
 export default {
   name: "Footer",
-  components: { ScrollTopButton },
+  components: {},
   computed: {
     githubIcon() {
       return faGithub;

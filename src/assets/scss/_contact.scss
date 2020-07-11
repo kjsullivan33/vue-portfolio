@@ -1,5 +1,7 @@
 @import "./global";
+
 #contact {
+  position: relative;
   background-color: #27232e;
   justify-content: flex-start;
   align-items: center;
@@ -98,6 +100,13 @@ form {
 
 .row:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.home-scroll-up {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 750px) {
