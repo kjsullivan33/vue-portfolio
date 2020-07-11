@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main class="project-container">
     <nav>
       <router-link to="/" replace>
         <font-awesome-icon :icon="arrowIcon" class="btn-back" />
@@ -20,7 +20,7 @@
         </div>
       </div>
     </nav>
-    <main class="project" v-if="projectData">
+    <div class="project" v-if="projectData">
       <header class="project-header">
         <h1>{{ projectData.name }}</h1>
         <h5 class="summary">{{ projectData.summary }}</h5>
@@ -58,8 +58,8 @@
           </div>
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 </template>
 
 <script>
