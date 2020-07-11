@@ -1,8 +1,16 @@
 // imports
 @import "./global";
 
-nav {
+.project-container {
   position: relative;
+  background-color: rgb(46, 41, 58);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: fixed;
+  z-index: 999;
   background-color: $lightPurple;
   display: flex;
   width: 100%;
@@ -62,11 +70,9 @@ nav {
   }
 }
 
-main {
+.project-content {
   position: relative;
-  background-color: rgb(46, 41, 58);
   width: 100%;
-  min-height: 80vh;
   color: rgb(193, 192, 198);
   display: flex;
   flex-direction: column;
@@ -87,7 +93,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   text-align: center;
 
   h5 {
