@@ -6,6 +6,7 @@
 
 <script>
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
+import { scrollTop } from "../helpers/scrollTop";
 export default {
   name: "ScrollTopButton",
   computed: {
@@ -15,7 +16,7 @@ export default {
   },
   methods: {
     scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      scrollTop();
     }
   }
 };

@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   width: 80%;
   align-items: center;
-  color: #2d2c2e;
+  color: $darkFont;
   font-weight: 700;
   margin-bottom: 3rem;
 
@@ -32,8 +32,8 @@
 .icon-box {
   margin: 2rem 2rem 0.5rem 2rem;
   padding: 1rem 2rem;
-  background-color: #524b63;
-  border-radius: 10px;
+  background-color: $lightPurple;
+  border-radius: $mediumRadius;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@
 
 .profile-img {
   height: 20rem;
-  border-radius: 50%;
+  border-radius: $circle;
 }
 
 .personal-info {
@@ -91,7 +91,7 @@
   align-items: center;
   color: $light;
   .label {
-    background-color: #524b63;
+    background-color: $lightPurple;
     display: flex;
     align-items: center;
     height: 100%;
@@ -111,7 +111,7 @@
   }
 
   .percentage {
-    color: #524b63;
+    color: $lightPurple;
     position: absolute;
     top: 50%;
     right: 5px;

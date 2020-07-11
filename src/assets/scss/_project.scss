@@ -4,9 +4,9 @@
 .project-container {
   position: relative;
   background-color: rgb(46, 41, 58);
-  min-height: 100vh;
   margin: 0;
   padding: 0;
+  min-height: 80vh;
 }
 nav {
   position: fixed;
@@ -28,7 +28,7 @@ nav {
     width: 20rem;
     padding: 2rem 2rem 2rem 1rem;
     &.active {
-      background-color: #2d2c2e;
+      background-color: $darkFont;
     }
 
     &:hover {
@@ -38,7 +38,7 @@ nav {
 
   .menu-options {
     width: 20rem;
-    border-radius: 3px;
+    border-radius: $smallRadius;
     position: absolute;
     top: 3.3rem;
     right: 0rem;
@@ -55,7 +55,7 @@ nav {
       color: inherit;
     }
     &:hover {
-      background-color: #2d2c2e;
+      background-color: $darkFont;
     }
   }
 
@@ -124,10 +124,10 @@ nav {
     width: fit-content;
     text-transform: none;
     background-color: rgba(19, 13, 26, 0.4);
-    border-radius: 5px;
-    -webkit-box-shadow: 3px 3px 5px 0px black;
-    -moz-box-shadow: 3px 3px 5px 0px black;
-    box-shadow: 3px 3px 5px 0px black;
+    border-radius: $smallRadius;
+    -webkit-box-shadow: $mediumShadow;
+    -moz-box-shadow: $mediumShadow;
+    box-shadow: $mediumShadow;
     a {
       color: inherit;
     }
@@ -207,7 +207,7 @@ nav {
     height: 1rem;
     width: 1rem;
     background-color: $dark;
-    border-radius: 50%;
+    border-radius: $circle;
 
     &.active {
       background-color: $light;
@@ -216,16 +216,16 @@ nav {
 }
 
 .slideshow-image {
-  border-radius: 10px;
+  border-radius: $mediumRadius;
   width: 80%;
   height: auto;
-  -webkit-box-shadow: 3px 3px 5px 0px #2d2c2e;
-  -moz-box-shadow: 3px 3px 5px 0px #2d2c2e;
-  box-shadow: 3px 3px 5px 0px #2d2c2e;
+  -webkit-box-shadow: $mediumShadow;
+  -moz-box-shadow: $mediumShadow;
+  box-shadow: $mediumShadow;
 }
 
 .responsibilities {
-  border-radius: 5px;
+  border-radius: $smallRadius;
   width: 25%;
   background-color: rgba(19, 13, 26, 0.4);
   padding: 2rem;

@@ -21,27 +21,23 @@ select,
 textarea {
   width: 100%;
   padding: 1.2rem;
-  border-radius: 4px;
+  border-radius: $smallRadius;
   box-sizing: border-box;
   resize: vertical;
   color: $light;
-  background-color: rgb(24, 21, 31);
+  background-color: $darkest;
   font-size: 1.2rem;
   line-height: 140%;
   padding: 0.5rem 1rem;
   caret-color: $light;
   border: none;
-  border-radius: 2px;
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: $smallRadius;
+  -webkit-box-shadow: $mediumShadow;
+  -moz-box-shadow: $mediumShadow;
+  box-shadow: $mediumShadow;
 
   &::placeholder {
     color: $mediumLight;
-  }
-
-  &:focus {
-    outline: 1px solid rgba(123, 241, 47, 0.5);
   }
 }
 
@@ -55,14 +51,14 @@ label {
 input[type="submit"] {
   font-size: 1.4rem;
   padding: 12px 20px;
-  border-radius: 4px;
+  border-radius: $smallRadius;
   cursor: pointer;
   background-color: transparent;
   color: $light;
   float: right;
   border: 1px solid $light;
   &:hover {
-    background-color: #4caf50;
+    background-color: $green;
     border-color: transparent;
   }
 }

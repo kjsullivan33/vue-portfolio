@@ -3,16 +3,16 @@
 .scroll-up {
   height: 3rem;
   width: 3rem;
-  background-color: rgb(40, 196, 63);
+  background-color: $green;
   color: $light;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 2px;
-  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  border-radius: $smallRadius;
+  -webkit-box-shadow: $lightShadow;
+  -moz-box-shadow: $lightShadow;
+  box-shadow: $lightShadow;
   z-index: 99;
 
   &:hover {

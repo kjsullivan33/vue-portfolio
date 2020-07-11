@@ -4,10 +4,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(24, 21, 31);
+  background-color: $darkest;
   height: 10rem;
   width: 100%;
-  position: relative;
 }
 
 #icons {
@@ -27,20 +26,20 @@ footer {
 .footer-icon_box {
   cursor: pointer;
   color: $mediumLight;
-  background-color: #524b63;
+  background-color: $lightPurple;
   padding: 1rem 1.3rem;
-  border-radius: 5px;
+  border-radius: $smallRadius;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: $lightShadow;
+  -moz-box-shadow: $lightShadow;
+  box-shadow: $lightShadow;
 
   &:hover {
     color: $mediumLight;
-    background-color: #433d50;
+    background-color: $mediumPurple;
   }
 }
 

@@ -8,11 +8,22 @@ $light: #f5f8fa;
 $mediumLight: #bfd2e3;
 $medium: #657786;
 $dark: #100c21;
-$darkest: #0e0a1e;
+$darkest: rgb(23, 20, 29);
+$darkFont: rgb(33, 31, 38);
 $white: #fff;
 $green: #7bf12f;
-$lightGreen: #a4fc6b;
+$lightGreen: rgba(123, 241, 47, 0.5);
 $lightPurple: #524b63;
+$mediumPurple: #433d50;
+
+//box-shadows
+$lightShadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+$mediumShadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+//border-radiuses
+$smallRadius: 5px;
+$mediumRadius: 10px;
+$circle: 50%;
 // resets
 * {
   margin: 0;
@@ -72,6 +83,15 @@ a {
   }
 }
 
+input[type="text"],
+select,
+textarea,
+button {
+  &:focus {
+    outline: 1px solid $lightGreen;
+  }
+}
+
 // globals
 
 #app {
@@ -85,11 +105,11 @@ a {
   font-weight: 700;
   text-align: center;
   font-size: 3rem;
-  color: #2d2c2e;
+  color: $darkFont;
 }
 
 .header_bar {
-  background-color: #2d2c2e;
+  background-color: $darkFont;
   width: 6rem;
   height: 4px;
   margin-top: 1rem;

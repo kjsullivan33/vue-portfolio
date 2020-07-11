@@ -3,7 +3,7 @@
 
 .my-nav {
   width: 100%;
-  background-color: #524b63;
+  background-color: $lightPurple;
   height: 3rem;
   position: sticky;
   top: 0;
@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  border-bottom: 2px solid rgb(40, 196, 63);
+  border-bottom: 2px solid $green;
 }
 
 #navbar-desktop {
@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #524b63;
+  background-color: $lightPurple;
   padding-bottom: 0.5rem;
 
   .menu-item {

@@ -32,6 +32,7 @@
 
 <script>
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { scrollTop } from "../helpers/scrollTop";
 export default {
   name: "Navbar",
   props: {
@@ -62,7 +63,7 @@ export default {
       this.showMenu = false;
     },
     scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      scrollTop();
     },
     scrollTo(id) {
       document.getElementById(id).scrollIntoView({
