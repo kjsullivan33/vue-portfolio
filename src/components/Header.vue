@@ -1,7 +1,6 @@
 <template>
   <div>
     <header id="home-header">
-      <a name="home" id="home" />
       <vue-particles
         class="particle_bg"
         color="#fff"
