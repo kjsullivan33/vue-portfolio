@@ -53,22 +53,21 @@
 
 .summary {
   width: 30rem;
-  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem 3rem;
 }
 
 .profile-img {
-  height: 20rem;
+  width: 100%;
+  height: auto;
   border-radius: $circle;
 }
 
 .personal-info {
   text-align: center;
-  margin: 1rem 0 5rem 0;
+  margin-top: 1rem;
   line-height: 1.6rem;
 }
 
