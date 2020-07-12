@@ -23,7 +23,7 @@
       <div class="title">
         <h1 class="header_text">
           Hello, I'm
-          <span class="name">Kristen Sullivan</span>.
+          <span class="color-text">Kristen Sullivan</span>.
         </h1>
         <h1 class="header_text">I'm a full-stack web developer</h1>
         <button class="button" id="scrollDown" @click="scrollDown">

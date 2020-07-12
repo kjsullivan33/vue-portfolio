@@ -2,20 +2,22 @@
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   background-color: $darkest;
   height: 10rem;
   width: 100%;
+  color: $light;
 }
 
 #icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   width: 300px;
   font-size: 1.4rem;
+  margin-top: 3rem;
 }
 
 .footer-icon {
@@ -41,6 +43,11 @@ footer {
     color: $mediumLight;
     background-color: $mediumPurple;
   }
+}
+
+.footer-name {
+  margin-top: 1rem;
+  color: $mediumLight;
 }
 
 @media screen and (max-width: 600px) {
