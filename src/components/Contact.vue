@@ -1,41 +1,29 @@
 <template>
   <section id="contact">
-    <div class="contact-header">
-      Would you like to contact me? Send me an email.
-    </div>
+    <div class="contact-header">Would you like to contact me? Send me an email.</div>
     <div class="container">
       <form @submit.prevent="sendEmail">
         <div class="row">
-          <div class="col-10">
+          <div class="col-15">
             <label for="name">Name</label>
           </div>
-          <div class="col-90">
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              placeholder="Your name.."
-            />
+          <div class="col-85">
+            <input type="text" id="name" name="user_name" placeholder="Your name.." />
           </div>
         </div>
         <div class="row">
-          <div class="col-10">
+          <div class="col-15">
             <label for="email">Email</label>
           </div>
-          <div class="col-90">
-            <input
-              type="text"
-              id="email"
-              name="user_email"
-              placeholder="Your email address.."
-            />
+          <div class="col-85">
+            <input type="text" id="email" name="user_email" placeholder="Your email address.." />
           </div>
         </div>
         <div class="row">
-          <div class="col-10">
+          <div class="col-15">
             <label for="message">Message</label>
           </div>
-          <div class="col-90">
+          <div class="col-85">
             <textarea
               id="message"
               name="message"

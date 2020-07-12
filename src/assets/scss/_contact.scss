@@ -70,21 +70,21 @@ form {
 /* Style the container */
 .container {
   color: $light;
-  width: calc(100vw - 400px);
+  width: calc(100vw - 800px);
   min-width: 20rem;
 }
 
-/* Floating column for labels: 10% width */
-.col-10 {
+/* Floating column for labels: 15% width */
+.col-15 {
   float: left;
-  width: 10%;
+  width: 15%;
   text-align: right;
 }
 
-/* Floating column for inputs: 90% width */
-.col-90 {
+/* Floating column for inputs: 85% width */
+.col-85 {
   float: left;
-  width: 90%;
+  width: 85%;
 }
 
 /* Clear floats after the columns */
@@ -106,13 +106,13 @@ form {
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 750px) {
-  .col-10,
-  .col-90,
+  .col-15,
+  .col-85,
   input[type="submit"] {
     width: 100%;
   }
 
-  .col-10 {
+  .col-15 {
     text-align: left;
   }
 
