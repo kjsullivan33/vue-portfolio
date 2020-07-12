@@ -93,7 +93,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 2rem 0;
+  margin: 4rem 0 2rem 0;
   text-align: center;
 
   h5 {
@@ -197,7 +197,7 @@ nav {
 
   .slideshow-pagination {
     margin-top: 1rem;
-    width: 50%;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,6 +208,10 @@ nav {
     width: 1rem;
     background-color: $dark;
     border-radius: $circle;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
 
     &.active {
       background-color: $light;
