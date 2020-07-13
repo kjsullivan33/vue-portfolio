@@ -17,6 +17,13 @@
     height: auto;
     border: 1px solid $light;
 
+    .mobile-link {
+      visibility: visible;
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+
     .project-text {
       width: 100%;
       height: 4rem;
@@ -110,5 +117,16 @@
         background-color: $green;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-link {
+    visibility: visible;
+  }
+
+  .project-text,
+  .desktop-link {
+    visibility: hidden;
   }
 }

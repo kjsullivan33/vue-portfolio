@@ -26,11 +26,23 @@
           <div class="project-tech">{{ project.tech }}</div>
         </div>
         <router-link
+          class="desktop-link"
           :to="{ name: 'project', params: { id: project.id } }"
           replace
         >
-          <button class="btn-learn">Learn More</button>
+          <button class="btn-learn">Learn more about this project</button>
         </router-link>
+        <div class="mobile-link">
+          To learn more about this project,
+          <span
+            ><router-link
+              :to="{ name: 'project', params: { id: project.id } }"
+              replace
+            >
+              click here
+            </router-link></span
+          >.
+        </div>
       </div>
     </div>
   </section>
