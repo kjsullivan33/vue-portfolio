@@ -32,17 +32,14 @@
         >
           <button class="btn-learn">Learn more about this project</button>
         </router-link>
-        <div class="mobile-link">
-          To learn more about this project,
-          <span
-            ><router-link
-              :to="{ name: 'project', params: { id: project.id } }"
-              replace
-            >
-              click here
-            </router-link></span
-          >.
-        </div>
+        <router-link
+          :to="{ name: 'project', params: { id: project.id } }"
+          replace
+        >
+          <div class="mobile-link">
+            Click to learn more about this project.
+          </div>
+        </router-link>
       </div>
     </div>
   </section>

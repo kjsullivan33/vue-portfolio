@@ -11,18 +11,15 @@
   margin-top: 2rem;
   margin-bottom: 5rem;
 
+  .mobile-link {
+    display: none;
+  }
+
   .project {
     position: relative;
     width: 28rem;
     height: auto;
     border: 1px solid $light;
-
-    .mobile-link {
-      visibility: visible;
-      width: 100%;
-      text-align: center;
-      margin: 1rem 0 2rem 0;
-    }
 
     .project-text {
       width: 100%;
@@ -60,7 +57,7 @@
 
       .btn-learn {
         opacity: 1;
-        bottom: 5%;
+        bottom: 15%;
       }
 
       .grid-box-picturebox {
@@ -122,11 +119,20 @@
 
 @media screen and (max-width: 600px) {
   .mobile-link {
-    visibility: visible;
+    display: block !important;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem auto 2rem auto;
+    background-color: $lightPurple;
+    padding: 1rem 2rem;
+    border-radius: $smallRadius;
+    color: $light;
   }
 
   .project-text,
   .desktop-link {
-    visibility: hidden;
+    display: none;
   }
 }
