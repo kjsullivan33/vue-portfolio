@@ -4,17 +4,12 @@
       <router-link to="/" replace>
         <font-awesome-icon :icon="arrowIcon" class="btn-back" />
       </router-link>
-      <div
-        id="other-project-menu"
-        @mouseover="showMenu = true"
-        @mouseleave="showMenu = false"
-        v-on:click="toggleMenu"
-      >
+      <div id="other-project-menu" v-on:click="toggleMenu">
         <div class="menu" :class="{ active: showMenu }">
           View Another Project
         </div>
         <transition name="slide">
-          <div v-show="showMenu" class="menu-options">
+          <div v-show="showMenu" id="menu-options">
             <div
               class="other-project"
               v-for="project in otherProjects"
@@ -117,9 +112,14 @@ export default {
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
-      this.showMenu === true
-        ? document.addEventListener("click", this.close)
-        : document.removeEventListener("click", this.close);
+      const menuOptions = document.getElementById("menu-options");
+      if (this.showMenu === true) {
+        menuOptions.style.visibility("visible");
+        document.addEventListener("click", this.close);
+      } else {
+        menuOptions.style.visibility("hidden");
+        document.removeEventListener("click", this.close);
+      }
     },
     close(e) {
       if (!this.$el.contains(e.target) || !e) {
