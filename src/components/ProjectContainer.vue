@@ -6,14 +6,11 @@
       </router-link>
       <div
         id="other-project-menu"
-        @mouseover="showMenu = true"
+        @mouseover="isMobile ? null : (showMenu = true)"
         @mouseleave="showMenu = false"
+        @click="toggleMenu"
       >
-        <div
-          class="menu"
-          :class="{ active: showMenu }"
-          @click.prevent="toggleMenu"
-        >
+        <div class="menu" :class="{ active: showMenu }">
           View Another Project
         </div>
         <transition name="slide">
@@ -102,6 +99,7 @@ export default {
     showMenu: false,
     projectData: [],
     otherProjects: [],
+    isMobile: false,
     state: { imageIndex: 0, image: "", yPosition: 0 }
   }),
   created() {
@@ -112,10 +110,12 @@ export default {
     next();
   },
   mounted() {
+    window.addEventListener("resize", this.screenCheck);
     document.addEventListener("click", this.close);
     document.addEventListener("scroll", this.scroll);
   },
   beforeDestroy() {
+    window.removeEventListener("resize", this.screenCheck);
     document.removeEventListener("click", this.close);
     document.removeEventListener("scroll", this.scroll);
   },
@@ -162,6 +162,9 @@ export default {
         ? (nav.style.opacity = "0")
         : (nav.style.opacity = "1");
       this.state.yPosition = window.scrollY;
+    },
+    screenCheck() {
+      this.isMobile = window.matchMedia("(max-width: 600px)").matches;
     }
   }
 };
