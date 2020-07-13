@@ -8,12 +8,9 @@
         id="other-project-menu"
         @mouseover="showMenu = true"
         @mouseleave="showMenu = false"
+        @click.prevent="toggleMenu"
       >
-        <div
-          class="menu"
-          :class="{ active: showMenu }"
-          @click.prevent="toggleMenu"
-        >
+        <div class="menu" :class="{ active: showMenu }">
           View Another Project
         </div>
         <transition name="slide">
@@ -112,16 +109,17 @@ export default {
     next();
   },
   mounted() {
-    document.addEventListener("click", this.close);
     document.addEventListener("scroll", this.scroll);
   },
   beforeDestroy() {
-    document.removeEventListener("click", this.close);
     document.removeEventListener("scroll", this.scroll);
   },
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
+      this.showMenu === true
+        ? document.addEventListener("click", this.close)
+        : document.removeEventListener("click", this.close);
     },
     close(e) {
       if (!this.$el.contains(e.target) || !e) {
