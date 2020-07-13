@@ -8,7 +8,7 @@
         id="other-project-menu"
         @mouseover="showMenu = true"
         @mouseleave="showMenu = false"
-        @click.prevent="toggleMenu"
+        v-on:click="toggleMenu"
       >
         <div class="menu" :class="{ active: showMenu }">
           View Another Project
