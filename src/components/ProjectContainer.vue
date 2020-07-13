@@ -8,7 +8,7 @@
         id="other-project-menu"
         @mouseover="isMobile ? null : (showMenu = true)"
         @mouseleave="showMenu = false"
-        @click="toggleMenu"
+        @click.prevent="toggleMenu"
       >
         <div class="menu" :class="{ active: showMenu }">
           View Another Project
