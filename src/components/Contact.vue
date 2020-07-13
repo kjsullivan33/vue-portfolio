@@ -6,10 +6,10 @@
     <div class="container">
       <form @submit.prevent="sendEmail">
         <div class="row">
-          <div class="col-15">
+          <div class="col-20">
             <label for="name">Name</label>
           </div>
-          <div class="col-85">
+          <div class="col-80">
             <input
               type="text"
               id="name"
@@ -19,10 +19,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-15">
+          <div class="col-20">
             <label for="email">Email</label>
           </div>
-          <div class="col-85">
+          <div class="col-80">
             <input
               type="text"
               id="email"
@@ -32,10 +32,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-15">
+          <div class="col-20">
             <label for="message">Message</label>
           </div>
-          <div class="col-85">
+          <div class="col-80">
             <textarea
               id="message"
               name="message"

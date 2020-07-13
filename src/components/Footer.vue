@@ -1,34 +1,28 @@
 <template>
   <footer id="footer">
-    <div id="icons">
-      <a
-        class="footer-icon_box"
-        href="https://www.github.com/kjsullivan33"
-        target="__blank"
-      >
-        <font-awesome-icon :icon="githubIcon" class="footer-icon" />
-      </a>
-      <a
-        class="footer-icon_box"
-        href="https://www.linkedin.com/in/kristenjsullivan83/"
-        target="__blank"
-      >
-        <font-awesome-icon :icon="linkedinIcon" class="footer-icon" />
-      </a>
-      <a
-        class="footer-icon_box"
-        href="https://www.facebook.com/kristen.sullivan.14"
-        target="__blank"
-      >
-        <font-awesome-icon :icon="facebookIcon" class="footer-icon" />
-      </a>
-      <a
-        class="footer-icon_box"
-        href="https://twitter.com/KayJaySully"
-        target="__blank"
-      >
-        <font-awesome-icon :icon="twitterIcon" class="footer-icon" />
-      </a>
+    <div id="links">
+      <div class="link-box">
+        <a
+          class="footer-icon_box"
+          href="https://www.github.com/kjsullivan33"
+          target="__blank"
+        >
+          <font-awesome-icon :icon="githubIcon" class="footer-icon" />
+          <p>Github</p>
+        </a>
+        <p class="link-details">Feel free to browse my repositories</p>
+      </div>
+      <div class="link-box">
+        <a
+          class="footer-icon_box"
+          href="https://www.linkedin.com/in/kristenjsullivan83/"
+          target="__blank"
+        >
+          <font-awesome-icon :icon="linkedinIcon" class="footer-icon" />
+          <p>Linkedin</p>
+        </a>
+        <p class="link-details">Let's connect on LinkedIn</p>
+      </div>
     </div>
     <div class="footer-name">
       <p>

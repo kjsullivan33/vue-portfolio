@@ -70,20 +70,20 @@ form {
 .container {
   color: $light;
   width: calc(100vw - 800px);
-  min-width: 20rem;
+  min-width: 25rem;
 }
 
-/* Floating column for labels: 15% width */
-.col-15 {
+/* Floating column for labels: 20% width */
+.col-20 {
   float: left;
-  width: 15%;
+  width: 20%;
   text-align: right;
 }
 
-/* Floating column for inputs: 85% width */
-.col-85 {
+/* Floating column for inputs: 80% width */
+.col-80 {
   float: left;
-  width: 85%;
+  width: 80%;
 }
 
 /* Clear floats after the columns */
