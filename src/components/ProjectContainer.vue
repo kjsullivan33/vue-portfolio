@@ -4,12 +4,7 @@
       <router-link to="/" replace>
         <font-awesome-icon :icon="arrowIcon" class="btn-back" />
       </router-link>
-      <div
-        id="other-project-menu"
-        @mouseover="isMobile ? null : (showMenu = true)"
-        @mouseleave="showMenu = false"
-        @click.prevent="toggleMenu"
-      >
+      <div id="other-project-menu" @click.prevent="toggleMenu">
         <div class="menu" :class="{ active: showMenu }">
           View Another Project
         </div>
