@@ -1,38 +1,69 @@
 <template>
-  <div class="my-nav">
+  <nav class="my-nav">
     <div id="navbar-desktop">
       <scrollactive active-class="-active">
-        <a href="#home" class="scrollactive-item" id="home-nav" @click="scrollToTop">Home</a>
-        <a href="#about" class="scrollactive-item" id="about-nav" v-on:click="scrollTo(id)">About</a>
+        <a href="#home-header" class="scrollactive-item" id="home-nav">Home</a>
+        <a
+          href="#about"
+          class="scrollactive-item"
+          id="about-nav"
+          v-on:click="e => scrollTo(e.target.id)"
+          >About</a
+        >
         <a
           href="#projects"
           class="scrollactive-item"
           id="projects-nav"
-          v-on:click="scrollTo(id)"
-        >Projects</a>
+          v-on:click="e => scrollTo(e.target.id)"
+          >Projects</a
+        >
         <a
           href="#contact"
           class="scrollactive-item"
           id="contact-nav"
-          v-on:click="scrollTo(id)"
-        >Contact</a>
+          v-on:click="e => scrollTo(e.target.id)"
+          >Contact</a
+        >
       </scrollactive>
     </div>
-    <div id="navbar-mobile">
-      <font-awesome-icon :icon="burgerIcon" class="burger-icon" @click.prevent="toggleMenu" />
+    <!-- <div id="navbar-mobile">
+      <font-awesome-icon
+        :icon="burgerIcon"
+        class="burger-icon"
+        @click.prevent="toggleMenu"
+      />
       <div v-show="showMenu" class="menu-options">
-        <a href="#home" class="menu-item" id="home-nav" @click="scrollToTop">Home</a>
-        <a href="#about" class="menu-item" id="about-nav" v-on:click="scrollTo(id)">About</a>
-        <a href="#projects" class="menu-item" id="projects-nav" v-on:click="scrollTo(id)">Projects</a>
-        <a href="#contact" class="menu-item" id="contact-nav" v-on:click="scrollTo(id)">Contact</a>
+        <a href="#home" class="menu-item" id="home-nav" @click="scrollToTop"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="menu-item"
+          id="about-nav"
+          v-on:click="scrollTo(id)"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="menu-item"
+          id="projects-nav"
+          v-on:click="scrollTo(id)"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="menu-item"
+          id="contact-nav"
+          v-on:click="scrollTo(id)"
+          >Contact</a
+        >
       </div>
-    </div>
-  </div>
+    </div> -->
+  </nav>
 </template>
 
 <script>
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { scrollTop } from "../helpers/scrollTop";
 export default {
   name: "Navbar",
   props: {
@@ -50,33 +81,12 @@ export default {
     };
   },
   methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-      console.log(this.showMenu);
-    },
-    close(e) {
-      if (!this.$el.contains(e.target) || !e) {
-        this.showMenu = false;
-      }
-    },
-    closeMenu() {
-      this.showMenu = false;
-    },
-    scrollToTop() {
-      scrollTop();
-    },
     scrollTo(id) {
       document.getElementById(id).scrollIntoView({
         behavior: "smooth"
       });
       this.closeMenu();
     }
-  },
-  mounted() {
-    document.addEventListener("click", this.close);
-  },
-  beforeDestroy() {
-    document.removeEventListener("click", this.close);
   }
 };
 </script>

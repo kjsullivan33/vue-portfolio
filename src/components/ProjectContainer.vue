@@ -4,20 +4,33 @@
       <router-link to="/" replace>
         <font-awesome-icon :icon="arrowIcon" class="btn-back" />
       </router-link>
-      <div id="other-project-menu" @mouseover="showMenu = true" @mouseleave="showMenu = false">
+      <div
+        id="other-project-menu"
+        @mouseover="showMenu = true"
+        @mouseleave="showMenu = false"
+      >
         <div
           class="menu"
-          :class="{active: showMenu}"
+          :class="{ active: showMenu }"
           @click.prevent="toggleMenu"
-        >View Another Project</div>
-        <div v-show="showMenu" class="menu-options">
-          <div class="other-project" v-for="project in otherProjects" v-bind:key="project.id">
-            <router-link
-              :to="{ name: 'project', params: { id: project.id } }"
-              replace
-            >{{ project.name }}</router-link>
-          </div>
+        >
+          View Another Project
         </div>
+        <transition name="slide">
+          <div v-show="showMenu" class="menu-options">
+            <div
+              class="other-project"
+              v-for="project in otherProjects"
+              v-bind:key="project.id"
+            >
+              <router-link
+                :to="{ name: 'project', params: { id: project.id } }"
+                replace
+                >{{ project.name }}</router-link
+              >
+            </div>
+          </div>
+        </transition>
       </div>
     </nav>
     <div class="project-content" v-if="projectData">
@@ -28,7 +41,10 @@
       <div class="content">
         <div class="responsibilities">
           <h3>Responsibilities</h3>
-          <ul v-for="(responsibility, index) in projectData.responsibilities" v-bind:key="index">
+          <ul
+            v-for="(responsibility, index) in projectData.responsibilities"
+            v-bind:key="index"
+          >
             <li>{{ responsibility }}</li>
           </ul>
         </div>
@@ -39,12 +55,17 @@
               :class="{ disabled: state.imageIndex === 0 }"
               class="btn-slideshow prev"
             ></div>
-            <img class="slideshow-image" :src="state.image" rel="preload" alt="slideshowImage" />
+            <img
+              class="slideshow-image"
+              :src="state.image"
+              rel="preload"
+              alt="slideshowImage"
+            />
             <div
               @click="next"
               :class="{
-              disabled: state.imageIndex === projectData.slides.length - 1
-            }"
+                disabled: state.imageIndex === projectData.slides.length - 1
+              }"
               class="btn-slideshow next"
             ></div>
           </div>
@@ -76,11 +97,27 @@ export default {
       return faArrowLeft;
     }
   },
+  data: () => ({
+    selectedOption: null,
+    showMenu: false,
+    projectData: [],
+    otherProjects: [],
+    state: { imageIndex: 0, image: "", yPosition: 0 }
+  }),
+  created() {
+    this.getContent(this.$route.params.id);
+  },
+  beforeRouteUpdate(to, from, next) {
+    this.getContent(to.params.id);
+    next();
+  },
   mounted() {
     document.addEventListener("click", this.close);
+    document.addEventListener("scroll", this.scroll);
   },
   beforeDestroy() {
     document.removeEventListener("click", this.close);
+    document.removeEventListener("scroll", this.scroll);
   },
   methods: {
     toggleMenu() {
@@ -118,22 +155,15 @@ export default {
         ? this.state.imageIndex--
         : (this.state.imageIndex = imageCount - 1);
       this.state.image = this.projectData.slides[this.state.imageIndex];
+    },
+    scroll() {
+      const nav = document.querySelector("nav");
+      window.scrollY > this.state.yPosition
+        ? (nav.style.opacity = "0")
+        : (nav.style.opacity = "1");
+      this.state.yPosition = window.scrollY;
     }
-  },
-  created() {
-    this.getContent(this.$route.params.id);
-  },
-  beforeRouteUpdate(to, from, next) {
-    this.getContent(to.params.id);
-    next();
-  },
-  data: () => ({
-    selectedOption: null,
-    showMenu: false,
-    projectData: [],
-    otherProjects: [],
-    state: { imageIndex: 0, image: "" }
-  })
+  }
 };
 </script>
 

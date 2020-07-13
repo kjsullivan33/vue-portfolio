@@ -1,7 +1,11 @@
 <template>
   <footer id="footer">
     <div id="icons">
-      <a class="footer-icon_box" href="https://www.github.com/kjsullivan33" target="__blank">
+      <a
+        class="footer-icon_box"
+        href="https://www.github.com/kjsullivan33"
+        target="__blank"
+      >
         <font-awesome-icon :icon="githubIcon" class="footer-icon" />
       </a>
       <a
@@ -18,7 +22,11 @@
       >
         <font-awesome-icon :icon="facebookIcon" class="footer-icon" />
       </a>
-      <a class="footer-icon_box" href="https://twitter.com/KayJaySully" target="__blank">
+      <a
+        class="footer-icon_box"
+        href="https://twitter.com/KayJaySully"
+        target="__blank"
+      >
         <font-awesome-icon :icon="twitterIcon" class="footer-icon" />
       </a>
     </div>

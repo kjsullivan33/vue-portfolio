@@ -1,6 +1,8 @@
 <template>
   <section id="contact">
-    <div class="contact-header">Would you like to contact me? Send me an email.</div>
+    <div class="contact-header">
+      Would you like to contact me? Send me an email.
+    </div>
     <div class="container">
       <form @submit.prevent="sendEmail">
         <div class="row">
@@ -8,7 +10,12 @@
             <label for="name">Name</label>
           </div>
           <div class="col-85">
-            <input type="text" id="name" name="user_name" placeholder="Your name.." />
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Your name.."
+            />
           </div>
         </div>
         <div class="row">
@@ -16,7 +23,12 @@
             <label for="email">Email</label>
           </div>
           <div class="col-85">
-            <input type="text" id="email" name="user_email" placeholder="Your email address.." />
+            <input
+              type="text"
+              id="email"
+              name="user_email"
+              placeholder="Your email address.."
+            />
           </div>
         </div>
         <div class="row">
