@@ -25,9 +25,9 @@
       </div>
     </div>
     <div class="footer-name">
-      <p>
-        Kristen Sullivan
-        <span class="color-text">2020</span>
+      <p class="link-details">
+        Kristen Sullivan <span class="color-text" v-html="'&copy'"></span>
+        <span class="color-text"> 2020</span>
       </p>
     </div>
   </footer>
